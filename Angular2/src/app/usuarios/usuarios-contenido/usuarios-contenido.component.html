@@ -1,0 +1,13 @@
+<form [formGroup]="frmUsuarios">
+  <div>
+    <label for="nombre">nombre</label>
+    <input type="text" formControlName="nombre" id="nombre">
+  </div>
+  <div>
+    <label for="clave">clave</label>
+    <input type="text" formControlName="clave" id="clave">
+  </div>
+  <div>
+    <button (click)="borrar()">borrar</button>
+  </div>
+</form>

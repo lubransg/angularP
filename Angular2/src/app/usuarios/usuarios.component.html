@@ -1,0 +1,8 @@
+<div (click)="seleccionar(usuario)"
+*ngFor="let usuario of usuarios">
+{{usuario.name}}
+{{usuario.clave}}
+</div>
+<app-usuarios-contenido [usuario]="usuario">
+     
+</app-usuarios-contenido>

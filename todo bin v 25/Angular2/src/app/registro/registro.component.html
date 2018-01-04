@@ -1,0 +1,18 @@
+<form [formGroup]="frmRegistro">
+    <div>
+      <label for="nombre"></label>
+      <input type="text" formControlName="nombre" id="nombre">
+    </div>
+    <div>
+      <label for="clave"></label>
+      <input type="text" formControlName="clave" id="clave">
+    </div>
+    <div>
+      <label for="confirmar"></label>
+      <input type="text" formControlName="confirmar" id="confirmar">
+    </div>
+    <div>
+      <button (click)="registro()"
+      [disabled]="!frmRegistro.valid">Registrarse</button>
+    </div>
+</form>
